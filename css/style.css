@@ -26,13 +26,13 @@ body {
     box-shadow: 0 0 0 0.05rem #fff;
 }
 
-.current-array {
+.section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
-.current-array-text {
+.section-text {
     border: 1px solid #fff;
     color: #fff;
     font-size: 15px;
@@ -40,6 +40,10 @@ body {
     width: 100%;
     text-align: center;
 }
-.current-array button {
+.section button {
     white-space: nowrap;
+}
+.text-placeholder {
+    opacity: .6;
+    pointer-events: none;
 }
