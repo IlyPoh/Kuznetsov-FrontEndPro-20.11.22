@@ -2,12 +2,12 @@ const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 
 const randomiser = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
-function generateKey(numberOfCharacters, characters) {
+function generateKey(numberOfCharacters, itemToWork) {
     
-    let arrayofCharacter = []
+    let arrayofCharacters = []
     for (let i = 0; i < numberOfCharacters; i++) {
-        arrayofCharacter.push(characters[randomiser(0, characters.length)]);
+        arrayofCharacters.push(itemToWork[randomiser(0, itemToWork.length)]);
     }
     
-    document.getElementById("generateKey").innerHTML = arrayofCharacter.join("")
+    document.getElementById("generateKey").innerHTML = arrayofCharacters.join("")
 }
