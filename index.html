@@ -9,7 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hi</h1>
+        <h2>Current array</h2>
+        <div class="section">
+            <div class="section-text" id="CurrentArray"></div>
+            <button class="btn" onclick="removeElement(currentArray, 5)">remove elements</button>
+        </div>
+        <h2>Generate key</h2>
+        <div class="section">
+            <div class="section-text" id="generateKey">
+                <div class="text-placeholder">
+                    Here will be your key
+                </div>
+            </div>
+            <button class="btn" onclick="generateKey(16, characters)">generate key</button>
+        </div>
     </div>
+    <script src="scripts/removeElement.js"></script>
+    <script src="scripts/generateKey.js"></script>
 </body>
 </html>
